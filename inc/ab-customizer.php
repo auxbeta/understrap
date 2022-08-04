@@ -167,53 +167,8 @@ $wp_customize->add_control( 'header_layout', array(
 ) );
 
 
-	// COLORS
+// COLORS
 	
-$wp_customize->add_setting( 'sample_alpha_color',
-   array(
-      'default' => 'rgba(209,0,55,0.7)',
-      'transport' => 'postMessage',
-      'sanitize_callback' => 'skyrocket_hex_rgba_sanitization'
-   )
-);
- 
-$wp_customize->add_control( new Skyrocket_Customize_Alpha_Color_Control( $wp_customize, 'sample_alpha_color_picker',
-   array(
-      'label' => __( 'Alpha Color Picker Control' ),
-      'description' => esc_html__( 'Sample custom control description' ),
-      'section' => 'sample_custom_controls_section',
-      'show_opacity' => true, // Optional. Show or hide the opacity value on the opacity slider handle. Default: true
-      'palette' => array( // Optional. Select the colours for the colour palette . Default: WP color control palette
-         '#000',
-         '#fff',
-         '#df312c',
-         '#df9a23',
-         '#eef000',
-         '#7ed934',
-         '#1571c1',
-         '#8309e7'
-      )
-   )
-) );    
-
-/*
-$wp_customize->add_setting( 'header_background_color', array(
-		'default'           => 'transparent',
-		'transport'         => 'postMessage',
-		'sanitize_callback' => 'sanitize_color_option',
-) );
-$wp_customize->add_control( 'header_background_color', array(
-		'type'     => 'radio',
-		'label'    => __( 'Header Background Color' ),
-		'choices'  => array(
-			'default' => _x( 'Transparent', 'transparent' ),
-			'custom'  => _x( 'Custom Header Background', 'primary color' ),
-		),
-		'section'  => 'header_customizer',
-		'priority' => 10,
-) );
-*/
-
 // Add primary color hue setting and control.
 $wp_customize->add_setting(
 	'header_color',
