@@ -17087,4 +17087,103 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: "paralucent-text", sans-serif;
+}
+
+section #respond {
+  float: left;
+}
+
+/* General */
+.centered {
+  text-align: center;
+}
+
+.logo {
+  max-width: 13em;
+  height: auto;
+}
+
+.fleft {
+  float: left !important;
+}
+
+/* For AB Customizer to work */
+.top-bar, .top-bar ul {
+  background-color: transparent !important;
+}
+
+.padded {
+  padding: 1em;
+}
+
+.ab-width {
+  width: 100%;
+}
+
+/* skrollr */
+/*
+.skrollr-content {
+	@media only screen and breakpoint(large) {
+	padding: 5em 0em;	
+	}
+*/
+.content-title {
+  text-decoration: underline;
+}
+
+.header-container {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+/* Centered Logo Navigation */
+.topbar-center-logo {
+  background: #2c3840;
+}
+.topbar-center-logo .menu {
+  background: #2c3840;
+}
+.topbar-center-logo .menu a {
+  color: #fff;
+}
+
+/*
+.topbar-center-logo .top-bar-center {
+  flex: 1 0 auto;
+
+  @include breakpoint(small only) {
+    display: none;
+  }
+}
+*/
+.topbar-center-logo-mobile {
+  background: #2c3840;
+}
+.topbar-center-logo-mobile .menu-icon {
+  vertical-align: text-top;
+}
+
+#menu-right-menu-main.menu {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.topbar-center-logo .top-bar-left {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
 /*# sourceMappingURL=theme.css.map */

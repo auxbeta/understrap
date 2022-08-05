@@ -16,6 +16,9 @@ section #respond {
 	max-width: 13em;
 	height: auto;
 }
+.fleft {
+	float: left !important;
+}
 /* For AB Customizer to work */
 .top-bar, .top-bar ul {
     background-color: transparent !important;
@@ -27,11 +30,12 @@ section #respond {
 	width: 100%;
 }
 /* skrollr */
+/*
 .skrollr-content {
 	@media only screen and #{breakpoint(large)} {
 	padding: 5em 0em;	
 	}
-}
+*/
 .content-title {
 	text-decoration: underline;
 }
@@ -57,6 +61,7 @@ $topbar-center-logo-bg: #2c3840;
   }
 }
 
+/*
 .topbar-center-logo .top-bar-center {
   flex: 1 0 auto;
 
@@ -64,6 +69,7 @@ $topbar-center-logo-bg: #2c3840;
     display: none;
   }
 }
+*/
 
 .topbar-center-logo-mobile {
   background: $topbar-center-logo-bg;
@@ -81,19 +87,4 @@ $topbar-center-logo-bg: #2c3840;
     flex-direction: row-reverse;}
 .topbar-center-logo .top-bar-left  {
 	flex: 1 0 auto;
-}
-
-/*****************************************
-Tablet 640px
-*****************************************/
-@media only screen and #{breakpoint(medium)} {
-	
-
-}
-/*****************************************
-Desktop  1024px
-*****************************************/
-@media only screen and #{breakpoint(large)} {
-	
-
 }
