@@ -19,7 +19,7 @@ if ( is_front_page() ) {
 ?>
 
 <div class="wrapper" id="full-width-page-wrapper">
-
+<?php if ( function_exists( 'soliloquy' ) ) { soliloquy( 'home-slider', 'slug' ); } ?>
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
 		<div class="row">

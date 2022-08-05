@@ -33,7 +33,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
-
 				<?php
 				if ( have_posts() ) {
 					// Start the Loop.
