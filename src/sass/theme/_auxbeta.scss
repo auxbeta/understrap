@@ -1,0 +1,99 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+  font-family: "paralucent-text",sans-serif;
+}
+
+section #respond {
+	float: left;
+}
+/* General */
+.centered {
+	text-align: center;
+}
+.logo {
+	max-width: 13em;
+	height: auto;
+}
+/* For AB Customizer to work */
+.top-bar, .top-bar ul {
+    background-color: transparent !important;
+}
+.padded {
+	padding: 1em;
+}
+.ab-width {
+	width: 100%;
+}
+/* skrollr */
+.skrollr-content {
+	@media only screen and #{breakpoint(large)} {
+	padding: 5em 0em;	
+	}
+}
+.content-title {
+	text-decoration: underline;
+}
+
+.header-container {
+	padding-right: 0.625rem;
+	padding-left: 0.625rem;
+	max-width: 75rem;
+	margin: 0 auto;
+}
+/* Centered Logo Navigation */
+$topbar-center-logo-bg: #2c3840;
+
+.topbar-center-logo {
+  background: $topbar-center-logo-bg;
+
+  .menu {
+    background: $topbar-center-logo-bg;
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+.topbar-center-logo .top-bar-center {
+  flex: 1 0 auto;
+
+  @include breakpoint(small only) {
+    display: none;
+  }
+}
+
+.topbar-center-logo-mobile {
+  background: $topbar-center-logo-bg;
+
+  .menu-icon {
+    vertical-align: text-top;
+  }
+}
+#menu-right-menu-main.menu {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;}
+.topbar-center-logo .top-bar-left  {
+	flex: 1 0 auto;
+}
+
+/*****************************************
+Tablet 640px
+*****************************************/
+@media only screen and #{breakpoint(medium)} {
+	
+
+}
+/*****************************************
+Desktop  1024px
+*****************************************/
+@media only screen and #{breakpoint(large)} {
+	
+
+}
