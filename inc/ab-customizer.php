@@ -393,8 +393,8 @@ function auxbeta_customizer_css() {
     <style type="text/css">
 	    /* THEME CUSTOMIZER */
 
-	    body { background-color: <?php echo get_theme_mod( 'custom_bg_color' ) ?>;
-	    	   color: <?php echo get_theme_mod( 'bodytext_color' ) ?>;		}	    
+	    body { background-color: <?php echo get_theme_mod( 'custom_bg_color' ) ?> !important;
+	    	   color: <?php echo get_theme_mod( 'bodytext_color' ) ?> !important;		}	    
 /* 	    .top-bar, .hover-effect, .button, .top-bar, .top-bar ul, .title-bar { background-color: <?php echo get_theme_mod( 'header_color' ) ?> !important ;} */
         .main-content h1, .main-content .h1, .main-content h2, .main-content .h2, .main-content h3, 
         .main-content .h3, .main-content h4, .main-content .h4, .main-content h5, .main-content .h5 { color: <?php echo get_theme_mod( 'heading_color' ) ?>; }
@@ -413,7 +413,7 @@ function auxbeta_customizer_css() {
 		    color: <?php echo get_theme_mod( 'link_color_hover' ) ?> !important; }
 
 		/* HEADER */
-	    .ab-header { background-color: <?php echo get_theme_mod( 'header_color' ) ?>;}	    
+	    .bg-primary { background-color: <?php echo get_theme_mod( 'header_color' ) ?> !important;}	    
         #menu-main-menu a, #menu-main-menu a:visited { color: <?php echo get_theme_mod( 'nav_color' ) ?>; }
         #menu-main-menu a:hover, #menu-main-menu a:focus, #menu-main-menu a:visited:hover, #menu-main-menu a:visited:focus {color: <?php echo get_theme_mod( 'nav_color_hover' ) ?>;}
         .menu-icon::after {box-shadow: 0 7px 0 <?php echo get_theme_mod( 'nav_color' ) ?>, 0 14px 0 <?php echo get_theme_mod( 'nav_color' ) ?>; background: <?php echo get_theme_mod( 'nav_color' ) ?>;}
