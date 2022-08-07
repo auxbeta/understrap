@@ -8,10 +8,10 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
-
+<div class="col-lg-6 col-sm-12 padded">
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 	
-		<header class="entry-header">
+		<header class="entry-header centered">
 	
 			<?php
 			the_title(
@@ -19,11 +19,13 @@ defined( 'ABSPATH' ) || exit;
 				'</a></h2>'
 			);
 			?>
-	
-			<?php if ( 'post' === get_post_type() ) : ?>
-	
+			<?php $date = get_post_meta($post->ID, '_custom_date_meta_key', true); if($date != ''){echo date("F j, Y", strtotime($date));} ?>
+
+			<?php if ( 'portfolio' === get_post_type() ) : ?>
+
 				<div class="entry-meta">
-					<?php understrap_posted_on(); ?>
+					<?php  ?>
+<!-- 					<?php understrap_posted_on(); ?> -->
 				</div><!-- .entry-meta -->
 	
 			<?php endif; ?>
@@ -42,9 +44,8 @@ defined( 'ABSPATH' ) || exit;
 		</div><!-- .entry-content -->
 	
 		<footer class="entry-footer">
-	
-			<?php understrap_entry_footer(); ?>
-	
+		
 		</footer><!-- .entry-footer -->
 	
 	</article><!-- #post-## -->
+</div>
