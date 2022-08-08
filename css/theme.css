@@ -17113,6 +17113,11 @@ section #respond {
   float: left !important;
 }
 
+/* Portfolio CPT Styles */
+.portfolio-date {
+  font-style: italic;
+}
+
 /* For AB Customizer to work */
 .top-bar, .top-bar ul {
   background-color: transparent !important;
