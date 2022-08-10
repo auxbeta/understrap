@@ -396,16 +396,16 @@ function auxbeta_customizer_css() {
 	    body { background-color: <?php echo get_theme_mod( 'custom_bg_color' ) ?> !important;
 	    	   color: <?php echo get_theme_mod( 'bodytext_color' ) ?> !important;		}	    
 /* 	    .top-bar, .hover-effect, .button, .top-bar, .top-bar ul, .title-bar { background-color: <?php echo get_theme_mod( 'header_color' ) ?> !important ;} */
-        .main-content h1, .main-content .h1, .main-content h2, .main-content .h2, .main-content h3, 
-        .main-content .h3, .main-content h4, .main-content .h4, .main-content h5, .main-content .h5 { color: <?php echo get_theme_mod( 'heading_color' ) ?>; }
-        a, a:visited,
-        .pagination .current { color: <?php echo get_theme_mod( 'link_color' ) ?>; }
+        .site-main h1, .site-main .h1, .site-main h2, .site-main .h2, .site-main h3, 
+        .site-main .h3, .site-main h4, .site-main .h4, .site-main h5, .site-main .h5 { color: <?php echo get_theme_mod( 'heading_color' ) ?>; }
+        a, a:visited,.pagination .current { color: <?php echo get_theme_mod( 'link_color' ) ?>; }
         a:hover, a:focus, a:visited:hover, a:visited:focus,
         .pagination a, .pagination span, .fwidget-title { color: <?php echo get_theme_mod( 'link_color_hover' ) ?>; }
 		.top-bar .menu a:hover:not(.button),
-		.button:hover, .button:focus { background-color: <?php echo get_theme_mod( 'button_color_hover' ) ?> !important; }
-		.button, .wp-block-button .wp-block-button__link {background-color: <?php echo get_theme_mod( 'button_color' ) ?> !important; }
-	    .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus { 
+		button:hover, button:focus { background-color: <?php echo get_theme_mod( 'button_color_hover' ) ?> !important; }
+		button, .wp-block-button .wp-block-button__link {background-color: <?php echo get_theme_mod( 'button_color' ) ?> !important; }
+
+	    .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus { 		/* End Understrap Additions */
 		    background-color: <?php echo get_theme_mod( 'button_color' ) ?> !important; 
 		    color: white; }
 	    .pagination .current:hover, .pagination .current:focus { 
@@ -414,8 +414,10 @@ function auxbeta_customizer_css() {
 
 		/* HEADER */
 	    .bg-primary { background-color: <?php echo get_theme_mod( 'header_color' ) ?> !important;}	    
-        #menu-main-menu a, #menu-main-menu a:visited { color: <?php echo get_theme_mod( 'nav_color' ) ?>; }
-        #menu-main-menu a:hover, #menu-main-menu a:focus, #menu-main-menu a:visited:hover, #menu-main-menu a:visited:focus {color: <?php echo get_theme_mod( 'nav_color_hover' ) ?>;}
+		/* Understrap Additions */
+        .navbar-dark .navbar-nav .nav-link { color: <?php echo get_theme_mod( 'nav_color' ) ?>; }
+        .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus { color: <?php echo get_theme_mod( 'nav_color_hover' ) ?> !important; }
+		/* End Understrap Additions */
         .menu-icon::after {box-shadow: 0 7px 0 <?php echo get_theme_mod( 'nav_color' ) ?>, 0 14px 0 <?php echo get_theme_mod( 'nav_color' ) ?>; background: <?php echo get_theme_mod( 'nav_color' ) ?>;}
         .mobile-menu .menu .is-active > a, .mobile-off-canvas-menu .menu .is-active > a { background-color: <?php echo get_theme_mod( 'button_color' ) ?> !important; }
 		.dropdown.menu > li.is-active > a { color: <?php echo get_theme_mod( 'nav_text_current' ) ?> !important; }
@@ -427,8 +429,7 @@ function auxbeta_customizer_css() {
         .hover-effect:before { border-left: 3px solid <?php echo get_theme_mod( 'button_color' ) ?> !important ; }
 
 		/* FOOTER */
-	    .ab-footer { background-color: <?php echo get_theme_mod( 'footer_color' ) ?>;}
-		body .footer-container {color: <?php echo get_theme_mod( 'bodytext_color2' ) ?>}
+	    #wrapper-footer { background-color: <?php echo get_theme_mod( 'footer_color' ) ?>; color: <?php echo get_theme_mod( 'bodytext_color2' ) ?>}
 
 /*         .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus { background-color: <?php echo get_theme_mod( 'button_color_hover' ) ?> !important;  } */
     </style>

@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/*
+// Aux Beta Additions
+$navbar-dark-color: #060606;
+*/
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -17115,7 +17119,11 @@ section #respond {
 
 /* Portfolio CPT Styles */
 .portfolio-date {
-  font-style: italic;
+  font-family: mrs-eaves-xl-serif, serif !important;
+}
+
+.entry-meta {
+  font-family: mrs-eaves-xl-serif, serif !important;
 }
 
 /* For AB Customizer to work */
@@ -17131,6 +17139,19 @@ section #respond {
   width: 100%;
 }
 
+.navbar-nav, #right-sidebar h2, #right-sidebar .h2 {
+  font-family: mrs-eaves-xl-serif, serif !important;
+  text-transform: uppercase;
+}
+
+.page-title, .entry-title {
+  font-family: cinque-donne, serif;
+}
+
+a .page-title, a .entry-title {
+  text-decoration: none !important;
+}
+
 /* skrollr */
 /*
 .skrollr-content {
@@ -17140,6 +17161,11 @@ section #respond {
 */
 .content-title {
   text-decoration: underline;
+}
+
+.ablogo {
+  max-height: 150px;
+  max-width: 150px;
 }
 
 .header-container {

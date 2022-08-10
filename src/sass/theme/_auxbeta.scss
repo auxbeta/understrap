@@ -21,10 +21,14 @@ section #respond {
 }
 /* Portfolio CPT Styles */
 .portfolio-date {
-	font-style: italic;
+	font-family: mrs-eaves-xl-serif, serif !important;
 }
 .portfoliobg {
 // 	background-color: #d8d8d8;
+}
+.entry-meta {
+	font-family: mrs-eaves-xl-serif, serif !important;
+
 }
 /* For AB Customizer to work */
 .top-bar, .top-bar ul {
@@ -36,6 +40,17 @@ section #respond {
 .ab-width {
 	width: 100%;
 }
+.navbar-nav, #right-sidebar h2, #right-sidebar .h2 {
+	font-family: mrs-eaves-xl-serif, serif !important;
+	text-transform: uppercase;
+}
+.page-title, .entry-title {
+	font-family: cinque-donne, serif;
+}
+a .page-title, a .entry-title {
+	text-decoration: none !important;
+
+}
 /* skrollr */
 /*
 .skrollr-content {
@@ -46,7 +61,10 @@ section #respond {
 .content-title {
 	text-decoration: underline;
 }
-
+.ablogo {
+	max-height: 150px;
+	max-width: 150px;
+}
 .header-container {
 	padding-right: 0.625rem;
 	padding-left: 0.625rem;

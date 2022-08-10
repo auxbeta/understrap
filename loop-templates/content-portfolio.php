@@ -15,11 +15,11 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		
-		<h4 class="portfolio-date">
+		<div class="portfolio-date">
 			
 			<?php $date = get_post_meta($post->ID, '_custom_date_meta_key', true); if($date != ''){echo date("F j, Y", strtotime($date));} ?>
 			
-		</h4>
+		</div>
 		
 		<div class="entry-meta">
 
