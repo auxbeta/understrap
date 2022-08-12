@@ -17126,6 +17126,11 @@ section #respond {
   font-family: mrs-eaves-xl-serif, serif !important;
 }
 
+.comment-respond {
+  max-width: 60%;
+  margin: auto;
+}
+
 /* For AB Customizer to work */
 .top-bar, .top-bar ul {
   background-color: transparent !important;
